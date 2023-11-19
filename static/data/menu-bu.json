@@ -1,0 +1,20 @@
+{
+  "menuItems": [
+    {
+      "menutitle": "View by Category",
+      "url": "/category"
+    },
+    {
+      "menutitle": "View by Keyword",
+      "url": "/tags"
+    },
+    {
+      "menutitle": "Contact Us",
+      "url": "/contact"
+    },
+    {
+      "menutitle": "Pirate Social",
+      "url": "/pirate"
+    }
+  ]
+}

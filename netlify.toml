@@ -1,0 +1,23 @@
+[build]
+  publish = "public"
+  command = "gatsby build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--max_old_space_size=4096"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    X-Frame-Options = "ALLOW-FROM https://memegenes.com"
+
+[[edge_functions]]
+  function = "hello" 
+  path = "/hello"

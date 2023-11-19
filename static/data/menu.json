@@ -1,0 +1,8 @@
+{
+  "menuItems": [
+    {
+      "menutitle": "View Archives",
+      "url": "/archive"
+    }
+  ]
+}

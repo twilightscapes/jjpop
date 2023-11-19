@@ -1,0 +1,9 @@
+{
+  "siteColor": "#13A9F4",
+  "headerColor": "rgba(0, 0, 0, .8)",
+  "background": "#222",
+  "bodyColor": "",
+  "text": "#cccccc",
+  "cardBg": "rgba(0, 0, 0, .6)",
+  "textShadow": "rgba(0, 0, 0, .1)"
+}
