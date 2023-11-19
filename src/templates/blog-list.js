@@ -138,42 +138,42 @@ Play Multimedia
           )
         })}
 
-{/* {showShowMore && (
+{showShowMore && (
           <button onClick={() => navigate(`/archive/${currentPage + 1}`)}>
             Show more
           </button>
         )}
 
         {showEndOfResults && (
-          <div>End of results</div>
+          <div style={{ background:'rgba(0, 0, 0, 0.7)', width:'100%', margin:'0 auto', padding:'.2vh 2vw .2vh 2vw', textAlign:'center', color:'#fff', display:'flex', justifyContent:'center', borderRadius:'8px'}}>
+          <button onClick={() => navigate(pageContext.currentPage > 2 ? `/archive/${pageContext.currentPage - 1}` : '/archive')} disabled={pageContext.currentPage === 1}>
+            Previous
+          </button>
+          {Array.from({ length: numPages }, (_, i) => {
+            const page = i + 1
+            const path = page === 1 ? "/archive" : `/archive/${page}`
+            return (
+              <Link
+                key={`pagination-link-${page}`}
+                to={path}
+                activeClassName="active"
+                style={{padding:'20px'}}
+              >
+                {page}
+              </Link>
+            )
+          })}
+          <button onClick={() => navigate(`/archive/${pageContext.currentPage + 1}`)} disabled={pageContext.currentPage === numPages}>
+            Next
+          </button>
+        </div>
         )}
 
         {!showShowMore && !showEndOfResults && (
           <div>{posts.length} posts</div>
-        )} */}
+        )}
 
-<div style={{ background:'rgba(0, 0, 0, 0.7)', width:'90vw', margin:'0 auto', padding:'.2vh 2vw .2vh 2vw', textAlign:'center', color:'#fff', display:'flex', justifyContent:'center'}}>
-  <button onClick={() => navigate(pageContext.currentPage > 2 ? `/archive/${pageContext.currentPage - 1}` : '/archive')} disabled={pageContext.currentPage === 1}>
-    Previous
-  </button>
-  {Array.from({ length: numPages }, (_, i) => {
-    const page = i + 1
-    const path = page === 1 ? "/archive" : `/archive/${page}`
-    return (
-      <Link
-        key={`pagination-link-${page}`}
-        to={path}
-        activeClassName="active"
-        style={{padding:'20px'}}
-      >
-        {page}
-      </Link>
-    )
-  })}
-  <button onClick={() => navigate(`/archive/${pageContext.currentPage + 1}`)} disabled={pageContext.currentPage === numPages}>
-    Next
-  </button>
-</div>
+
 
       </div>
       

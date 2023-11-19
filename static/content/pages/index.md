@@ -1,7 +1,7 @@
 ---
 slug: /
-tagline:  Welcome to PIRATE, Matey!
-featuredImage: /assets/pirate-propaganda.webp
+tagline:  Welcome!
+featuredImage: /assets/team_alex_wood.jpg
 youtube:
   youtuber: 
   youtuber2: ""
