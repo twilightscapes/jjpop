@@ -648,7 +648,7 @@ alt={frontmatter.title + " - Featured image"}
 className="featuredimage"
 placeholder="blurred"
 loading="eager"
-style={{height:'auto', width:'100vw', maxHeight:'', position:'relative', zIndex:'0', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'2%'}}
+style={{height:'auto', width:'100vw', maxHeight:'', position:'relative', zIndex:'0', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0 2%'}}
 />
 
 
@@ -1147,7 +1147,7 @@ Built for artists, photographers, musicians, clubs & restaurants and other small
 
 {/* show footer */}
 {showfooter ? (
-<div className="scroll-area" style={{scrollSnapAlign:'end', position:'sticky', bottom:'0'}}>
+<div className="scroll-area1" style={{scrollSnapAlign:'', position:'', bottom:'0'}}>
 <Footer />
 </div>
 ) : (
