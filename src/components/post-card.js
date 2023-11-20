@@ -77,7 +77,7 @@ const PostCard = ({ data, index }) => {
 
       </Link>
       {showDates ? (
-            <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+            <p className="timeago" style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
             <TimeAgo date={data.frontmatter.date}/>
           </p>
           ) : (

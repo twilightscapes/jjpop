@@ -873,55 +873,20 @@ Early Alpha (testing only)
 
 
 
-{/* <section id="SecondaryInfo2" order="7" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'2% 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
-  color:'var(--theme-ui-colors-text)',
-  border:'0px solid red', 
-  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  background:'var(--theme-ui-colors-cardBg)',
-  backdropFilter:'blur(8px)',
-  // border:'1px solid #333',
-  borderRadius:'10px',
-  // textShadow:'0 2px 0px #000',
-  maxWidth:'95%' ,
-  // border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px'
-  }}>
 
 
 
-  <div className="nameblock flexcheek" style={{position:'sticky', top:'0', marginTop: '', width:'100%', padding: '0 2rem 0 2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color: '#fff', background: 'rgba(0,0,0,0.50)', backdropFilter: 'blur(12px)', borderRadius: '10px' }}>
-    <h2>How It Works</h2>
-  </div>
 
 
 
 
-<div className="flexbutt" style={{gap:'10vw'}}>
-<div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Set Sail:</h2> <p>At PIRATE, your personal website is your Galleon in the digital sea. Your Galleon does double duty working as both your homepage, resume, and blog, as well as acting as your Helm to another world of Social Media. You're no landlubber, you're a Captain, steering your own course through the Social Media Seas.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Chart Your Course:</h2> <p>Your homepage, profile and timeline become your Captain's Log and your personal flag, flying high above the digital waves. Your posts are more than mere messages in a bottle, they're personal tales of your adventures in the vast sea of the internet.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Spyglass View:</h2> <p>Every ship you spot and "Plunder" enhances your view of the digital horizon. Your custom timeline transforms your voyage into a grand exploration of the treasures you've chosen to seek out.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>High Seas Freedom:</h2> <p>PIRATE is a haven from the corporate armada, from central rule, and from censorship. Every word you scribe and every tale you tell is unequivocally yours. It's about sailing under your own flag, following your own chart, and staking your claim in the digital world.</p>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Shipmates Unite:</h2> <p>This platform is about building your crew on your terms. Your content is free from the manipulations of corporate quartermasters, allowing you to forge alliances based on authenticity and shared quests.</p>
-</div>
 
-<div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
 
-<StaticImage src="../../static/assets/action3.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Control your website and social media together in one app - easily installs onto your device so you have it with you at all times, even if you're offline.
-<StaticImage src="../../static/assets/action6.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Scan your timelines faster and the way you want. Featuring a unique swipe OR scroll interface, your choice.
-<StaticImage src="../../static/assets/action5.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Customize all aspects of your website in the app. Just love purple? Great, you can always be you!
-<StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-You control your timeline (and everything else), not some billionaire appeasing stockholders or their bottomline. 
-</div>
-</div>
 
 
-</section> */}
 
 
 
@@ -934,216 +899,9 @@ You control your timeline (and everything else), not some billionaire appeasing 
 
 
 
-<section className="" id="" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
 
 
 
-{/* <div id="" className="" style={{width:'75vw', margin:'0 auto 2vh auto', top:'', order:''}} >
- 
- <div className="" style={{ background: '', padding:'2rem ',
-          backdropFilter: 'blur(4px)', border:'0px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-
-<div style={{display: '', flexDirection:'', justifyContent:'', padding:'0 0 0 0', fontSize:'.8rem', textAlign:'center'}}>
-
-
-  <h2 id="captain" style={{fontSize:'clamp(3rem, 4.5vw, 1.5rem)'}}>Become a PIRATE!</h2>
-  <span style={{fontSize:'clamp(1.5rem, 2.5vw, 1.5rem)'}}>Choose Your Galleon:</span>
-
-          
-</div>
- 
-</div>
- 
-
- </div> */}
-
- 
-
-
-{/* INSTALL SECTION */}
-
-<div id="" className="flexbutt" style={{display:'none', gap:'10px', justifyContent:'space-around', alignItems:'center', justifyContent:'center', color:'', padding:'0 1%'}}>
-
-
-        
-
-<div id="" className="flexcheek" style={{display:'flex', flexDirection:'column', gap:'', justifyContent:'start', alignItems:'', width:'80vw'}}>
- 
-
-
-<StaticImage src="../../static/assets/galleon-pirate.webp" alt="Default Image" style={{height:'auto', maxWidth:'400px', position:'relative', zIndex:'0', top:'', borderRadius:'8px', objectFit:'contain', margin:'0 auto 0 auto'}} />
-
-
- <div className="" style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
-     backdropFilter: 'blur(4px)', border:'10px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', width:'100%', }}>
-
-<h2
-className="title1"
-style={{
-position: 'relative',
-textAlign: 'center', 
-float: 'none',
-margin:'0 0 0 0',
-padding:'0',
-
-}}
->
-
-<span  className="free" style={{fontSize:'1.7rem', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'relative', width:'100%', color:'#fff', display:'flex', justifyContent:'center', textShadow:'0px 2px 0px #222', filter:'drop-shadow(0px 0px 10px var(--theme-ui-colors-siteColor))', border:'1px solid var(--theme-ui-colors-siteColor)' }}>Get PIRATE</span>
-
-<br />
-PIRATE Social Platform<br />
-<span style={{fontSize:'130%'}}>+</span>
-<br />
-Your own custom homepage<br />
-Custom Resume and Skills section<br />
-{/* Ready To Use = Easy to Learn<br /> */}
-{/* Serverless = NO WordPress<br /> */}
-Cloud Hosted = Free Forever<br />
-
-{/* Web Apps = NO Apple or Google */}
-<br />
-
-
-
-Join the Social Revolution<br />
-Own Your Own Content!
-<br /><br />
-{/* <span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Secure | Features</span> */}
-
-INSTALL NOW!
-
-</h2>
-
-{/* <Install /> */}
-
-
-<div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'600px', textAlign:'center' }}>
-  
-  One-Click Install - NO APP STORE NEEDED
-<div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
-      
-{/* <button aria-label="Close this popup" onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
-
-<p style={{maxWidth:'', textAlign:'center'}}>Simply click the "install" icon in your browser address bar
-</p>
-
-{/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
-</div> */}
-  <span style={{fontSize:'100%'}}>OR</span>
-  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
-    
-    <div style={{textAlign:'center', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
-   <IoShareOutline style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} />
-    - &nbsp; Press the 'Share' button 
-  </div>
-  
-   <div style={{textAlign:'center', display:'flex', alignContent:'center',}}>
-   <FaRegPlusSquare style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} /> 
-   
-  - &nbsp; Press 'Add to Home Screen'
-   </div>
-   
-   </div>
-
-
-
-</div>
-</div>
-
-
-     {/* <SignUp /> */}
-
-
-     
-
-
-
-
-
-
-
-</div>
- 
-
-
-
-
-
-
-
- </div> 
-
-
-
-
-
-
-{/* <div id="" className="flexcheek" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', alignItems:'',}}>
- 
-      <StaticImage src="../../static/assets/galleon-pro.webp" alt="Default Image" style={{height:'auto', maxWidth:'', position:'relative', zIndex:'0', top:'20px', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-
-      <div className="" style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
-     backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', width:'100%' }}>
-
-  <h2
-  className="title1 txtshadow-header"
-  style={{
-   position: 'relative',
-    textAlign: 'center', 
-    float: 'none',
-    margin:'0 0 0 0',
-    padding:'0',
-  }}
->
-
-<span  className="fire" style={{fontSize:'1.7rem', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'relative', width:'100%', color:'#fff', display:'flex', justifyContent:'center', textShadow:'0px 2px 0px #222', filter:'drop-shadow(0px 0px 10px var(--theme-ui-colors-siteColor))', border:'1px solid var(--theme-ui-colors-siteColor)' }}>Get PIRATE&nbsp;<span className="neonText" style={{color:'#a6fcff'}}> Pro</span></span>
-
-<br />
-
-PIRATE Social Platform<br />+<br />
-
-Complete website/app platform<br />
-Customize all pages and build a unique multimedia blog/portfolio.<br />
-<br />
-Built for artists, photographers, musicians, clubs & restaurants and other small businesses.
-<br /><br />
-<span  className="neonText">BECOME A CAPTAIN!</span>
-</h2>
-
-          <SignUp />
-          
-</div>
-      
-
-
-
-
-
-
-
-      </div>  */}
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- {/* <GoogleMap /> */}
-{/* <div id="bottom" className="usability scroll-area" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'2vh auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'1px solid blue', textAlign:'center'}}>
-<div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://urbanfetish.com">UrbanFetish.com</a></div>
-</div> */}
 
 
 {/* show footer */}
