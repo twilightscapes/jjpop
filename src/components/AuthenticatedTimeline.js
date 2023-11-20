@@ -5,7 +5,7 @@ import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";
-import Menu from "../components/menu";
+// import Menu from "../components/menu";
 import useNetlifyIdentity from '../components/useNetlifyIdentity';
 import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
@@ -78,7 +78,7 @@ const AuthenticatedTimeline = () => {
     };
     
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [ setLoggedIn] = useState(false);
   useNetlifyIdentity(setLoggedIn);
 
   const combinedFeed = [
@@ -394,7 +394,7 @@ return (
         <p className="post-excerpt">{createExcerpt(item.description, 150)}</p> 
       </div>
     </a>
-    <div className="post-meta" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', width:'auto', maxWidth:'80vw', margin:'0 auto', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)', gap:'2vw', }}>
+    <div className="post-meta" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', width:'auto', maxWidth:'80vw', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)', gap:'2vw', }}>
     <a
   href={item.feedUrl} // Set the href to the feed URL
   className="postlink"

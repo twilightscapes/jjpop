@@ -7,7 +7,7 @@ import Layout from "../components/siteLayout";
 import useSiteMetadata from "../hooks/SiteMetadata";
 import { Helmet } from "react-helmet";
 import Footer from "../components/footer";
-// import Map from "../components/contact-map"
+import Map from "../components/contact-map"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -20,7 +20,6 @@ export const pageQuery = graphql`
         contactname
         contactphone
         contactupload
-        uploadtext
       }
     }
     site {
@@ -67,7 +66,7 @@ const handleSubmit = e => {
   console.log(frontmatter.redirect);
   if (frontmatter.redirect === true) {
     setTimeout(() => {
-      window.location.href = "/install2";
+      window.location.href = "/thanks/";
     }, 1600);
   } else {
     fetch("/", {
@@ -106,11 +105,9 @@ const handleSubmit = e => {
 
       {showNav ? <div className="spacer" style={{ height: "60px", border: "0px solid yellow" }}></div> : ""}
 
-      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "" }}>
-        {/* <h1 className="headline">{frontmatter.title}</h1> */}
-        {/* <div className="description" style={{ padding: "2vh 6%" }} dangerouslySetInnerHTML={{ __html: html }}>Please tell us a bit about you:</div> */}
-        
-        <div className="description" style={{ padding: "3vh 6% 0 6%", textAlign:'center' }}>Please tell us a bit about you:</div> 
+      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "20px" }}>
+        <h1 className="headline">{frontmatter.title}</h1>
+        <div className="description" style={{ padding: "2vh 6%" }} dangerouslySetInnerHTML={{ __html: html }} />
 
         <div
           className="wrapper flexbutt"
@@ -129,8 +126,8 @@ const handleSubmit = e => {
 
 
 <form
-  className={`contact-form flexcheek1 ${submitted ? "submitted" : ""}`}
-  action="/install2"
+  className={`contact-form flexcheek ${submitted ? "submitted" : ""}`}
+  // action="/thanks"
   name="contact"
   method="POST"
   data-netlify="true"
@@ -181,18 +178,17 @@ const handleSubmit = e => {
 
       <p>
         <label>
-          <textarea name="message" placeholder="Your Bio" required></textarea>
+          <textarea name="message" placeholder="Your Message" required></textarea>
         </label>
       </p>
 
 
 
       {frontmatter.contactupload && (
-   <label htmlFor="attachment1" style={{padding: '0', color: 'inherit', textShadow:'1px 1px 0 #555', display:'flex', flexDirection:'column', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
-    {frontmatter.uploadtext}
+   <label htmlFor="attachment1" style={{padding: '0', color: 'inherit', textShadow:'1px 1px 0 #555', display:'flex', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
         <input className="file-input hidden" type="file" name="file" 
         // accept=".pdf,.doc,.docx" 
-        />
+        />{frontmatter.uploadtext}
       </label>
   )}
 
@@ -200,18 +196,9 @@ const handleSubmit = e => {
         className="text-align-right1"
         style={{ margin: "0 auto", color: "#fff" }}
       >
-       
-
-        <button
-            className="button specialfont1"
-            type="submit"
-            disabled={isSubmitting}
-            style={{width:'90%',}}
-          >
-            {isSubmitting ? "Submitting..." : "Continue › › ›"}
-          </button>
-
-
+        <button className="button" type="submit" disabled={isSubmitting} style={{padding:'1vh 10vw'}}>
+          {isSubmitting ? "Submitting..." : "Send Now"}
+        </button>
       </p>
     </>
   )}

@@ -83,10 +83,10 @@ const applyArchiveView = useCallback(() => {
       // window.scrollTo(0, 0);
     } 
     
-    // if ( document.querySelector('body').classList.contains("homepage")) {
-    //   el.classList.remove("horizontal-scroll", "panels");
-    //   el.classList.add("grid-container");
-    // }
+    if ( document.querySelector('body').classList.contains("homepage")) {
+      el.classList.remove("horizontal-scroll", "panels");
+      el.classList.add("grid-container");
+    }
     
     else if (archiveView === "swipe") {
       el.classList.remove("grid-container");
