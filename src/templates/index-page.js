@@ -21,12 +21,12 @@ import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineAudioMuted } from 'react-icons/ai';
 // import { MdVolumeDown } from "react-icons/md"
 // import { RiArrowRightDownFill } from "react-icons/ri"
-// import TwilightLogo from "../../static/assets/logo.svg"
+// import TwilightLogo from "../../user/assets/logo.svg"
 // import Install from "../components/install-footer"
 // import Faqs from "../components/equipment-list"
 import SignUp from "../components/newssign"
 // import SearchSlider from "../components/search1"
-// import LHScores from "../../static/assets/logo.svg"
+// import LHScores from "../../user/assets/logo.svg"
 
 // import styled from "styled-components"
 import Social from "../components/social"
@@ -657,7 +657,7 @@ style={{height:'auto', width:'100vw', maxHeight:'', position:'relative', zIndex:
 
           ) : (
 
-            <StaticImage src="../../static/assets/default-og-image.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', margin:'0 auto'}} />
+            <StaticImage src="../../user/assets/default-og-image.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', margin:'0 auto'}} />
   
           )}
 
@@ -909,13 +909,13 @@ Early Alpha (testing only)
 
 <div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
 
-<StaticImage src="../../static/assets/action3.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+<StaticImage src="../../user/assets/action3.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Control your website and social media together in one app - easily installs onto your device so you have it with you at all times, even if you're offline.
-<StaticImage src="../../static/assets/action6.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+<StaticImage src="../../user/assets/action6.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Scan your timelines faster and the way you want. Featuring a unique swipe OR scroll interface, your choice.
-<StaticImage src="../../static/assets/action5.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+<StaticImage src="../../user/assets/action5.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Customize all aspects of your website in the app. Just love purple? Great, you can always be you!
-<StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+<StaticImage src="../../user/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 You control your timeline (and everything else), not some billionaire appeasing stockholders or their bottomline. 
 </div>
 </div>
@@ -971,7 +971,7 @@ You control your timeline (and everything else), not some billionaire appeasing 
  
 
 
-<StaticImage src="../../static/assets/galleon-pirate.webp" alt="Default Image" style={{height:'auto', maxWidth:'400px', position:'relative', zIndex:'0', top:'', borderRadius:'8px', objectFit:'contain', margin:'0 auto 0 auto'}} />
+<StaticImage src="../../user/assets/galleon-pirate.webp" alt="Default Image" style={{height:'auto', maxWidth:'400px', position:'relative', zIndex:'0', top:'', borderRadius:'8px', objectFit:'contain', margin:'0 auto 0 auto'}} />
 
 
  <div className="" style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
@@ -1028,7 +1028,7 @@ INSTALL NOW!
 <p style={{maxWidth:'', textAlign:'center'}}>Simply click the "install" icon in your browser address bar
 </p>
 
-{/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
+{/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../user/assets/installed-bg.png" alt=""  />
 </div> */}
   <span style={{fontSize:'100%'}}>OR</span>
   <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
@@ -1081,7 +1081,7 @@ INSTALL NOW!
 
 {/* <div id="" className="flexcheek" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', alignItems:'',}}>
  
-      <StaticImage src="../../static/assets/galleon-pro.webp" alt="Default Image" style={{height:'auto', maxWidth:'', position:'relative', zIndex:'0', top:'20px', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+      <StaticImage src="../../user/assets/galleon-pro.webp" alt="Default Image" style={{height:'auto', maxWidth:'', position:'relative', zIndex:'0', top:'20px', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
       <div className="" style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
      backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', width:'100%' }}>

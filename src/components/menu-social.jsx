@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Menu from "../../static/data/menu-social.json";
+import Menu from "../../user/data/menu-social.json";
 // import BlueCheck from "./bluecheck";
 const newMenu = Menu.menuItems.map((menu) => (
   <Link

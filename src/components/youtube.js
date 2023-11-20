@@ -15,7 +15,7 @@ import React from "react"
 // import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
-// import SVG from "../../static/assets/crude-addiction.svg"
+// import SVG from "../../user/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../components/giftshop"
 // import PhotoMenu from "../components/animated-photos-menu"
@@ -135,7 +135,7 @@ import ReactPlayer from 'react-player/lazy'
       
       // </div>
       // </button>}
-      // light="../static/assets/transparent.png"
+      // light="../user/assets/transparent.png"
     />
 
 

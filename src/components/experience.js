@@ -1,13 +1,13 @@
 import React, { Component } from "react"
-import Icon1 from "../../static/content/map/icons/icon-1.png"
-import Icon2 from "../../static/content/map/icons/icon-2.png"
-import Icon3 from "../../static/content/map/icons/icon-3.png"
-import Icon4 from "../../static/content/map/icons/icon-4.png"
-import Icon5 from "../../static/content/map/icons/icon-5.png"
-import Icon6 from "../../static/content/map/icons/icon-6.png"
-import Icon7 from "../../static/content/map/icons/icon-7.png"
-import Icon8 from "../../static/content/map/icons/icon-8.png"
-import Icon9 from "../../static/content/map/icons/icon-9.png"
+import Icon1 from "../../user/content/map/icons/icon-1.png"
+import Icon2 from "../../user/content/map/icons/icon-2.png"
+import Icon3 from "../../user/content/map/icons/icon-3.png"
+import Icon4 from "../../user/content/map/icons/icon-4.png"
+import Icon5 from "../../user/content/map/icons/icon-5.png"
+import Icon6 from "../../user/content/map/icons/icon-6.png"
+import Icon7 from "../../user/content/map/icons/icon-7.png"
+import Icon8 from "../../user/content/map/icons/icon-8.png"
+import Icon9 from "../../user/content/map/icons/icon-9.png"
 // import Statistics from "./statistics"
 
 const Springfield = {
@@ -250,8 +250,8 @@ class Map extends Component {
     )
 
     var src =
-      "https://github.com/venkateshcp/frpincstatic/blob/56dfc6d28a1d78fb7baf222b90229988407421f1/frp.kmz?raw=true"
-      // "https://github.com/completeweb-site/base/blob/decap/static/content/map/frp.kmz?raw=true"
+      "https://github.com/venkateshcp/frpincuser/blob/56dfc6d28a1d78fb7baf222b90229988407421f1/frp.kmz?raw=true"
+      // "https://github.com/completeweb-site/base/blob/decap/user/content/map/frp.kmz?raw=true"
       
     //this.addMarker(map)
 

@@ -12,7 +12,7 @@ backend:
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run npx netlify-cms-proxy-server for local testing
 logo_url: ../assets/logo.svg
-media_folder: "static/assets"
+media_folder: "user/assets"
 public_folder: "/assets"
 # publish_mode: editorial_workflow
 # site_url: ""
@@ -28,7 +28,7 @@ collections:
     label_singular: "Pirate Post"
     description: >
       Pirate Posts - your content on Pirate
-    folder: "static/content/team"
+    folder: "user/content/team"
     create: true
     slug: "{{slug}}"
     fields:
@@ -48,7 +48,7 @@ collections:
     label_singular: "Site Post" # Used in the UI, ie: "New Post"
     description: >
       Create stuff for you website here.
-    folder: "static/content/posts"
+    folder: "user/content/posts"
     slug: "{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
     create: true # Allow users to create new documents in this collection
@@ -223,7 +223,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "static/content/pages/index.md"
+        file: "user/content/pages/index.md"
         fields:
           - {
               label: "Template",
@@ -325,7 +325,7 @@ collections:
                 
       - label: "About"
         name: "about"
-        file: "static/content/pages/about.md"
+        file: "user/content/pages/about.md"
         fields:
           - {
               label: "Template",
@@ -338,7 +338,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
-        file: "static/content/pages/contact.md"
+        file: "user/content/pages/contact.md"
         fields:
           - {
               label: "Template",
@@ -396,7 +396,7 @@ collections:
     files:
       - name: general
         label: General
-        file: "static/data/site.json"
+        file: "user/data/site.json"
         fields:
           - label: meta
             name: meta
@@ -567,7 +567,7 @@ collections:
         name: socialIcons
         editor:
           preview: false
-        file: "static/data/socialmedia.json"
+        file: "user/data/socialmedia.json"
         fields:
           - label: Social Icons
             name: socialIcons
@@ -608,7 +608,7 @@ collections:
         name: menuNavigation
         editor:
           preview: false
-        file: "static/data/menu.json"
+        file: "user/data/menu.json"
         fields:
           - label: Menu Items
             name: menuItems
@@ -635,7 +635,7 @@ collections:
     files:
       - label: "User Styles"
         name: "userStyles"
-        file: "static/data/userStyles.json"
+        file: "user/data/userStyles.json"
         fields:
           - label: "Override Site Styles"
             name: "userStyles"
@@ -644,7 +644,7 @@ collections:
 
       - label: "Default Theme"
         name: "themescolors"
-        file: "static/data/default-colors.json"
+        file: "user/data/default-colors.json"
         fields:
           - label: "siteColor"
             name: "siteColor"
@@ -694,7 +694,7 @@ collections:
 
       - label: "Dark Theme"
         name: "darkthemescolors"
-        file: "static/data/dark-theme-colors.json"
+        file: "user/data/dark-theme-colors.json"
         fields:
           - label: "siteColor"
             name: "siteColor"
