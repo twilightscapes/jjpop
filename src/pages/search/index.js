@@ -7,7 +7,7 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import Layout from "../../components/siteLayout"
 import { Helmet } from "react-helmet"
-// import TwilightLogo from "../../../user/assets/logo.svg"
+// import TwilightLogo from "../../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 import useSiteMetadata from "../../hooks/SiteMetadata"
@@ -119,7 +119,7 @@ const showMoreItems = () => {
 
           <StaticImage
             className="featured-image1"
-            src="../../../user/assets/default-og-image.webp"
+            src="../../../static/assets/default-og-image.webp"
             alt="Default Image"
             style={{ position: 'relative', zIndex: '' }}
           />

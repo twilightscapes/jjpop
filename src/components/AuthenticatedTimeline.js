@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
-import userRssData from "../../user/data/userRss.json";
+import userRssData from "../../static/data/userRss.json";
 // import Menu from "../components/menu";
 import useNetlifyIdentity from '../components/useNetlifyIdentity';
 import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"

@@ -4,7 +4,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 // import Theme from "../components/theme"
 // import Consent from "./Consent"
 // import Install from "./install-footer"
-import Icons from "../../user/data/socialmedia.json"
+import Icons from "../../static/data/socialmedia.json"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,

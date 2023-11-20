@@ -4,7 +4,7 @@ import * as React from "react"
 
 
 // import Install from "../components/Install-footer"
-import Icons from "../../user/data/socialmedia.json"
+import Icons from "../../static/data/socialmedia.json"
 // import { FaHandPointDown } from "react-icons/fa"
 
 import {

@@ -7,11 +7,11 @@ require("dotenv").config()
 const netlifyCmsPaths = {
   resolve: `gatsby-plugin-netlify-cms-paths`,
   options: {
-    cmsConfig: `/user/admin/config.yml`,
+    cmsConfig: `/static/admin/config.yml`,
   },
 }
 
-const settings = require("./user/data/site.json")
+const settings = require("./static/data/site.json")
 
 
 
@@ -163,7 +163,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/user/assets/`,
+        path: `${__dirname}/static/assets/`,
         name: `assets`,
       },
     },
@@ -179,14 +179,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `team`,
-        path: `${__dirname}/user/content/team/`,
+        path: `${__dirname}/static/content/team/`,
       },
     },
 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/user/content/`,
+        path: `${__dirname}/static/content/`,
         name: `content`,
       },
     },
@@ -350,7 +350,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `CMS`,
-        htmlFavicon: `user/assets/logo.svg`,
+        htmlFavicon: `static/assets/logo.svg`,
         includeRobots: false,
         logo_url: 'https://memegenes.com/assets/logo.svg'
       },
@@ -440,18 +440,18 @@ module.exports = {
         lang: `en`,
         theme_color: `#111`,
         display: `standalone`,
- icon: `user/assets/logo.svg`, // This path is relative to the root of the site.
+ icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
  icon_options: {
   purpose: `any maskable`,
 },
       icons: [
         {
-          src: `/user/siteimages/manifest-icon-192.maskable.png`,
+          src: `/static/siteimages/manifest-icon-192.maskable.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `/user/siteimages/manifest-icon-512.maskable.png`,
+          src: `/static/siteimages/manifest-icon-512.maskable.png`,
           sizes: `512x512`,
           type: `image/png`,
         },
