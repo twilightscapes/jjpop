@@ -3,7 +3,7 @@ import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
 // import { AiOutlineClose } from "react-icons/ai"
-// import { window } from "browser-monads"
+import { window } from "browser-monads"
 import "../assets/scss/reset.scss"
 import "../assets/scss/global.scss"
 // import "../assets/scss/styles.css"
