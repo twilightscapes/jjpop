@@ -26,6 +26,7 @@
     "@theme-ui/color": "^0.16.1",
     "@theme-ui/mdx": "^0.16.1",
     "decap-cms-app": "^3.0.12",
+    "browser-monads": "^1.0.0",
     "dotenv": "^16.3.1",
     "gatsby": "^5.12.9",
     "gatsby-background-image": "^1.6.0",
