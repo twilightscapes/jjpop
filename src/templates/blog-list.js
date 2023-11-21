@@ -113,7 +113,7 @@ Play Multimedia
 
 
 
-<div className="" style={{display:'grid', placeContent:'center', minHeight:'', background: 'rgba(0, 0, 0, 0.7)', width: '', margin: '0 auto', padding: '.2vh 2vw .2vh 2vw', textAlign: 'center', color: '#fff', display: 'flex', justifyContent: 'center', borderRadius: '8px' }}>
+<div className="" style={{display:'grid', placeContent:'center', minHeight:'', background: 'rgba(0, 0, 0, 0.7)', width: '', margin: '0 1%', padding: '.2vh 2vw .2vh 2vw', textAlign: 'center', color: '#fff', display: 'flex', justifyContent: 'center', borderRadius: '8px' }}>
 
 {/* {hasMorePosts && (
           <> */}

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";
 import Menu from "../components/menu"
-import useNetlifyIdentity from '../components/useNetlifyIdentity';
+// import useNetlifyIdentity from '../components/useNetlifyIdentity';
 import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
 const createExcerpt = (text, maxLength) => {
@@ -83,7 +83,7 @@ const FavoriteFeeds = () => {
   const [visibleItems, setVisibleItems] = useState(postcount || 10); // default value of 10
 
   const [loggedIn, setLoggedIn] = useState(false);
-  useNetlifyIdentity(setLoggedIn);
+  // useNetlifyIdentity(setLoggedIn);
 
   const combinedFeed = [
     ...favorites,

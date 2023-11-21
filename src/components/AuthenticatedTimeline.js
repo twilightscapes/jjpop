@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";
 // import Menu from "../components/menu";
-import useNetlifyIdentity from '../components/useNetlifyIdentity';
+// import useNetlifyIdentity from '../components/useNetlifyIdentity';
 import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
 const AuthenticatedTimeline = () => {
@@ -79,7 +79,7 @@ const AuthenticatedTimeline = () => {
     
 
   const [ setLoggedIn] = useState(false);
-  useNetlifyIdentity(setLoggedIn);
+  // useNetlifyIdentity(setLoggedIn);
 
   const combinedFeed = [
     ...favorites,

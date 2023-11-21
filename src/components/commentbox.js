@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import commentbox from 'commentbox.io'
+// import commentbox from 'commentbox.io'
 import useSiteMetadata from "../hooks/SiteMetadata"
 
 

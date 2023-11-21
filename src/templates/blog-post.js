@@ -13,7 +13,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
 
 
 // import Controls from "../components/Controls";
-import { document } from "browser-monads"
+// import { document } from "browser-monads"
 import PropTypes from "prop-types";
 import { MdPlayArrow } from "react-icons/md"
 import { MdPause } from "react-icons/md"
@@ -31,7 +31,7 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 // import { RiArrowRightDownFill } from "react-icons/ri"
-import CommentBox from "../components/commentbox"
+// import CommentBox from "../components/commentbox"
 
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
@@ -1485,7 +1485,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 {Comments ? (
 
 <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'10vh auto'}}>
-<CommentBox />
+{/* <CommentBox /> */}
 
 
 
