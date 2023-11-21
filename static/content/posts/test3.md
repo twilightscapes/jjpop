@@ -34,7 +34,8 @@ featuredImage:
 underlayImage: null
 bumpertext: null
 svgImage: null
-category: news
+category: 
+  - news
 ---
 
 <style>

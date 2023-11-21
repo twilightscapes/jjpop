@@ -43,7 +43,6 @@ maratingtx1:
 maratingtx2: 
 maratingtx3: 
 maratingtx4: 
-category: 
 spotlight: null
 tags: 
  - test
