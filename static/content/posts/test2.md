@@ -47,7 +47,6 @@ svgzindex: null
 maratingtx2: null
 contentinvideo: false
 maratingtx3: null
-isnftforsale: false
 maratingtx4: null
 ---
 

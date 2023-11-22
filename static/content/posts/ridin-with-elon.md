@@ -22,7 +22,6 @@ audiotitle: PLAY Elon's DOPE Playlist
 audioend: ""
 audiostart: "90"
 liarliar: false
-isnftforsale: false
 svgzindex: "0"
 comments: false
 shareable: true

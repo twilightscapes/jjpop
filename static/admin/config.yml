@@ -109,13 +109,24 @@ collections:
       #   }
 
       - { label: "SEO Description", name: "description", widget: "text" }
-      - { label: "Category", name: "category", widget: "list", collapsed: true, default: "", required: false, add_to_top: true, field: {label: Category, name: name, widget: string, add_to_top: true,}}
+      - { label: "Category", name: "category", widget: "list", collapsed: true, default: "Default", required: false, add_to_top: true, field: {label: Category, name: name, widget: string, add_to_top: true,}}
 
 
 
-      # - { label: "Make Comments Available?", name: "comments", widget: "boolean", default: false, required: false }
-      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: true, required: false }
-      - { label: "Make Feature Image Zoom", name: "showZoom", widget: "boolean", default: true, required: false }
+      - { label: "Make Comments Available?", name: "comments", widget: "hidden", default: false, required: false, }
+      - { label: "isnftforsale", name: "isnftforsale", widget: "hidden", default: false, required: false, }
+
+
+
+
+
+
+
+
+
+
+      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: false, required: false }
+      - { label: "Make Feature Image Zoom", name: "showZoom", widget: "boolean", default: false, required: false }
       - { label: "Turn on Page Level Nav", name: "showPageNav", widget: "boolean", default: true, required: false }
       - { label: "Appear on Homepage", name: "spotlight", widget: "boolean", default: false, required: false }
 
@@ -129,7 +140,7 @@ collections:
 
 
 
-      - { label: "Page Tags", name: "tags", widget: "list", collapsed: true, default: "", required: false, add_to_top: true, field: {label: Tag, name: name, widget: string, add_to_top: true, collapsed: true,}}
+      - { label: "Page Tags", name: "tags", widget: "list", collapsed: true, default: "tagged", required: false, add_to_top: true, field: {label: Tag, name: name, widget: string, add_to_top: true, collapsed: true,}}
 
       - {
               label: "YouTube",
@@ -174,6 +185,7 @@ collections:
           hint: "The primary image used for all social media, blog previews and the feature image at the top of the post",
           required: false,
           tagname: "",
+          default: "/assets/transparent.png"
         }
       - {
           label: "Underlay Image",
@@ -182,6 +194,7 @@ collections:
           hint: "This is used to put a transparent png over the video but under the animation layer",
           required: false,
           tagname: "",
+          default: "/assets/transparent.png"
         }
       - {
           label: "SVG",
@@ -190,6 +203,7 @@ collections:
           hint: "This is the animation layer where your animated or static SVG image goes - it is on the top of the stack",
           required: false,
           tagname: "",
+          default: "/assets/null.svg"
         }
       # - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false, tagname: "", }
 
@@ -461,6 +475,11 @@ collections:
               - widget: boolean
                 name: showNav2 
                 label: Show Side Nav
+                required: false
+                
+              - widget: boolean
+                name: showDates
+                label: Show Dates
                 required: false
 
               # - widget: boolean

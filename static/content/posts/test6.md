@@ -50,7 +50,6 @@ contentinvideo: false
 maratingtx3: null
 category:
   - blooper
-isnftforsale: false
 maratingtx4: null
 ---
 

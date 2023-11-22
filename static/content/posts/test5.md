@@ -23,7 +23,6 @@ audiostart:
 audioend: 
 audiotitle: 
 liarliar: false
-isnftforsale: false
 svgzindex: 
 comments: false
 shareable: false

@@ -216,7 +216,7 @@ const Post = ({ data, pageContext }) => {
 // }
 
 
-// const IsNft = frontmatter.isnftforsale
+
 const ShowOriginal = frontmatter.youtube.youtubeshoworiginal
 const ShareThis = frontmatter.shareable
 const Comments = frontmatter.comments
@@ -1628,7 +1628,7 @@ export default Post
 
 
 export const pageQuery = graphql`
-  query BlogPostQueryBlogPostQuery($id: String!) {
+  query BlogPostQuery($id: String!) {
     site {
       siteMetadata {
         title
@@ -1676,7 +1676,6 @@ export const pageQuery = graphql`
         contentinvideo
         comments
         shareable
-        isnftforsale
         bumpertext
         viewerwarning
         marate
@@ -1697,7 +1696,7 @@ export const pageQuery = graphql`
             gatsbyImageData(layout: FULL_WIDTH)
           }
         }
-        svgImage{
+        svgImage {
           publicURL
         }
         underlayImage {
@@ -1708,4 +1707,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
