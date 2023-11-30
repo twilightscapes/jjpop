@@ -17,7 +17,10 @@ const settings = require("./static/data/site.json")
 
 module.exports = {
   flags: {},
-  siteMetadata: settings.meta,
+  siteMetadata: {
+    ...settings.meta, // Assuming settings.meta contains other metadata fields
+    homecount: 9, // Add homecount to the siteMetadata
+  },
   plugins: [
     // {
     //   resolve: "gatsby-source-shopify",
@@ -365,6 +368,7 @@ module.exports = {
             "X-XSS-Protection: 1; mode=block",
             "X-Content-Type-Options: nosniff",
             "Referrer-Policy: same-origin",
+            `Content-Security-Policy: frame-ancestors 'self' https://lambertphotography.com`,
           ],
         },
       },
@@ -444,18 +448,18 @@ module.exports = {
  icon_options: {
   purpose: `any maskable`,
 },
-      icons: [
-        {
-          src: `/static/siteimages/manifest-icon-192.maskable.png`,
-          sizes: `192x192`,
-          type: `image/png`,
-        },
-        {
-          src: `/static/siteimages/manifest-icon-512.maskable.png`,
-          sizes: `512x512`,
-          type: `image/png`,
-        },
-      ], // Add or remove icon sizes as desired
+      // icons: [
+      //   {
+      //     src: `/static/siteimages/manifest-icon-192.maskable.png`,
+      //     sizes: `192x192`,
+      //     type: `image/png`,
+      //   },
+      //   {
+      //     src: `/static/siteimages/manifest-icon-512.maskable.png`,
+      //     sizes: `512x512`,
+      //     type: `image/png`,
+      //   },
+      // ], // Add or remove icon sizes as desired
       },
     },
     "gatsby-plugin-offline",

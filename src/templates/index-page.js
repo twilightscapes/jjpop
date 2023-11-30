@@ -16,7 +16,7 @@ import { MdVolumeUp } from "react-icons/md"
 import { MdPlayArrow } from "react-icons/md"
 import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
-import { FaRegPlusSquare } from 'react-icons/fa';
+// import { FaRegPlusSquare } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineAudioMuted } from 'react-icons/ai';
 // import { MdVolumeDown } from "react-icons/md"
@@ -33,7 +33,7 @@ import Social from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 const HomePage = ({ data }) => {
@@ -54,7 +54,7 @@ const HomePage = ({ data }) => {
 
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    : ""
+    : null;
 
 
     const { companyname } = useSiteMetadata()
@@ -137,24 +137,41 @@ if (Suggestion1) {
 }
 
 
-  const Svg = frontmatter.svgImage
-  const svgZindex = frontmatter.svgzindex
+const Svg = frontmatter.svgImage;
+
+function AddSvg() {
   if (!Svg) {
-    
-  }
-  else{
-    <AddSvg />
+    return null; // or you can return a default SVG or placeholder
   }
 
+  const svgUrl = Svg.publicURL;
 
+  return (
+    <object
+      className="animator"
+      id=""
+      data={svgUrl}
+      type="image/svg+xml"
+      style={{
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        right: '0',
+        bottom: '0',
+        overflow: '',
+        border: '0px solid red',
+        zIndex: '',
+        aspectRatio: '',
+        width: '100vw',
+        background: 'transparent',
+        objectFit: 'cover'
+      }}
+      alt="animated content"
+      title="animated content"
+    ></object>
+  );
+}
 
-  
-  function AddSvg(){
-    const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
-    return (
-      <object title="Animation" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'', height:'auto',  }} alt="Animation" ></object>
-    )
-  }
 
 
 

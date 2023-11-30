@@ -11,30 +11,30 @@
 //   <AuthProvider>{element}</AuthProvider>
 // );
 
-export const onInitialClientRender = () => {
-  setTimeout(function() {
-    document.getElementById("___loader").style.display = "none"
-  }, 1000)
-}
+// export const onInitialClientRender = () => {
+//   setTimeout(function() {
+//     document.getElementById("___loader").style.display = "none"
+//   }, 1000)
+// }
 
-export const onRouteUpdate = ({ location }) => {
-  // Check if the current page is the archive page
-  if (location.pathname.startsWith('/archive')) {
-    // Implement your logic to persist state here
-    // For example, you can use localStorage or sessionStorage
-  }
-};
+// export const onRouteUpdate = ({ location }) => {
+//   // Check if the current page is the archive page
+//   if (location.pathname.startsWith('/archive')) {
+//     // Implement your logic to persist state here
+//     // For example, you can use localStorage or sessionStorage
+//   }
+// };
 
-export const onServiceWorkerUpdateReady = () => {
-  const answer = window.confirm(
-    `This website has been updated since your last visit. ` +
-      `Reload to display the latest version?`
-  )
+// export const onServiceWorkerUpdateReady = () => {
+//   const answer = window.confirm(
+//     `This website has been updated since your last visit. ` +
+//       `Reload to display the latest version?`
+//   )
 
-  if (answer === true) {
-    window.location.reload()
-  }
-}
+//   if (answer === true) {
+//     window.location.reload()
+//   }
+// }
 
 // Uncomment and modify if needed
 // export const onServiceWorkerUpdateFound = () => {

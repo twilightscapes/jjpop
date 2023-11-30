@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import netlifyIdentity from "netlify-identity-widget";
+// import netlifyIdentity from "netlify-identity-widget";
 // import { navigate } from "gatsby";
 
 const AuthContext = createContext();

@@ -178,7 +178,7 @@ const Post = ({ data, pageContext }) => {
   
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    : ""
+    : null;
 
     
 
@@ -205,7 +205,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-  const Svg = frontmatter.svgImage
+
   // const svgZindex = frontmatter.svgzindex
 
 // function AddSvg(){
@@ -438,14 +438,41 @@ const OriginalUrl = frontmatter.youtube.youtuber
     )
   }
 
+  const Svg = frontmatter.svgImage;
 
-
-  function AddSvg(){
-    const svgUrl = frontmatter.svgImage.publicURL
+  function AddSvg() {
+    if (!Svg) {
+      return null; // or you can return a default SVG or placeholder
+    }
+  
+    const svgUrl = Svg.publicURL;
+  
     return (
-      <object className="animator" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
-    )
+      <object
+        className="animator"
+        id=""
+        data={svgUrl}
+        type="image/svg+xml"
+        style={{
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          right: '0',
+          bottom: '0',
+          overflow: '',
+          border: '0px solid red',
+          zIndex: '',
+          aspectRatio: '',
+          width: '100vw',
+          background: 'transparent',
+          objectFit: 'cover'
+        }}
+        alt="animated content"
+        title="animated content"
+      ></object>
+    );
   }
+  
 
 
       //  const svgUrl = frontmatter.svgImage.publicURL
@@ -470,7 +497,7 @@ const YouTube = frontmatter.youtube.youtuber
 
   const { siteUrl } = useSiteMetadata()
   // const { companyname } = useSiteMetadata()
-  // const { iconimage } = useSiteMetadata()
+  const { iconimage } = useSiteMetadata()
 
 
   const { showNav } = useSiteMetadata()
@@ -593,9 +620,14 @@ const YouTube = frontmatter.youtube.youtuber
           {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="UrbanFetish" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
-          <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
 
-<div className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
+          <img className="homepage-bg2" src={iconimage} width="250px" height="150px" alt="Logo" style={{ border:'0px solid red', margin:'0 auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+
+
+          
+          {/* <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div> */}
+
+{/* <div className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
 
 
 {frontmatter.marate ? (
@@ -647,7 +679,7 @@ const YouTube = frontmatter.youtube.youtuber
 </ul>
 
 </div>
-<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>{frontmatter.viewerwarning}</div>
+<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>{frontmatter.viewerwarning}</div> */}
 
 
          <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'3% 0 0 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
@@ -1053,6 +1085,7 @@ Click to play
                   attributes: {
                     sameSite: "none",
                     crossorigin: "anonymous",
+                    referrerpolicy: "no-referrer-when-downgrade",
                   },
                 },
                   youtube: {
@@ -1075,7 +1108,8 @@ Click to play
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="UrbanFetish" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
-                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
+                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong>
+                </div>
 
 <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
 

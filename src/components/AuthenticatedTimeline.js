@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useSiteMetadata from "../hooks/SiteMetadata";
 import { Link } from "gatsby"
-import Layout from "../components/siteLayout";
+import Layout from "../components/socialLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";

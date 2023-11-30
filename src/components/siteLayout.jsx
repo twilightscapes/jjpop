@@ -206,7 +206,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
     #menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.horizontal-scroll:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special{font-family:${font1}, sans-serif}
     ${userStyles.userStyles}
   `}</style>
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {/* <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
 </Helmet>
 
 
@@ -297,7 +297,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
     <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="117" height="60" />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="111" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
@@ -309,9 +309,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
             {iconimage ? (
 <>
 {loggedIn ? (
-  <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="117" height="60" />
+  <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="111" height="60" />
 ) : (
-  <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} src={iconimage} alt={companyname} width="117" height="60" />
+  <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} src={iconimage} alt={companyname} width="111" height="60" />
               
 )}
 </>    
@@ -479,7 +479,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle bug">
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', fontWeight:'bold', border:'0px solid blue'}}>
 {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} width="120" height="60" style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
+      <img className="" src={iconimage} alt={companyname} width="111" height="60" style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
                 ) : (
                   <div style={{fontWeight:'bold', color:'yellow'}}>companyname</div>
                 )}
@@ -495,7 +495,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
     <li className="grad logo" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink className="sidelogo" to="/" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img src={iconimage} alt={companyname} width="120" height="60" style={{maxHeight:'60px', border:'none'}} />
+      <img src={iconimage} alt={companyname} width="111" height="60" style={{maxHeight:'60px', border:'none'}} />
                 ) : (
                   <div style={{fontWeight:'bold'}}>companyname</div>
                 )}

@@ -4,9 +4,9 @@ import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "",
+    text: "#333",
     background: "",
-    primary: "var(--primary)",
+    primary: "",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
     cardBg: "",
@@ -22,9 +22,9 @@ const theme = {
     buttonHoverColor: lightness("siteColor", 0.8),
     modes: {
       dark: {
-        text: "",
+        text: "#999",
         background: "",
-        primary: "var(--primary)",
+        primary: "",
         accent: "#5C2941",
         muted: "rgba(0, 0, 0, 0.2)",
         // cardBg: "linear-gradient(180deg, rgba(13, 11, 11, 0.8) 12%, rgba(19, 20, 22, 0.9) 80%)",

@@ -3,7 +3,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 // import { StaticImage } from "gatsby-plugin-image"
 // import {Link} from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/siteLayout"
+import Layout from "../components/socialLayout"
 import { Helmet } from "react-helmet"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
 const CustomBox = styled.div`

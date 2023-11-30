@@ -31,6 +31,7 @@ const useSiteMetadata = () => {
             showModals
             showSwipe
             postcount
+            homecount
             menu1
             menu2
             menu3

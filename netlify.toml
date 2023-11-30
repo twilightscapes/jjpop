@@ -12,6 +12,7 @@
     Access-Control-Allow-Origin = "*"
     X-Frame-Options = "ALLOW-FROM *"
     Content-Security-Policy = "frame-ancestors 'self' https://www.youtube.com https://youtu.be"
+    Secure-Referrer-Policy = "no-referrer-when-downgrade"
 
 [[edge_functions]]
   function = "hello" 

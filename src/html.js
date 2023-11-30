@@ -22,7 +22,7 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
         
         {props.preBodyComponents}
-        <div
+        {/* <div
               key={`loader`}
               id="___loader"
               style={{
@@ -39,14 +39,14 @@ export default function HTML(props) {
                 
                 zIndex: 100,
               }}
-           >
+           > */}
            {/* <img 
               src={LoaderSVG} 
               alt="loading spinner" 
               width="150" 
               height="150"
            /> */}
-           <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+           {/* <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
     <g fill="none" fillRule="evenodd">
         <g transform="translate(1 1)" strokeWidth="2">
             <circle strokeOpacity=".5" cx="18" cy="18" r="18"/>
@@ -61,8 +61,8 @@ export default function HTML(props) {
             </path>
         </g>
     </g>
-</svg>
-        </div>
+</svg> */}
+        {/* </div> */}
         <div
         style={{}}
           key={`body`}

@@ -97,7 +97,7 @@ body.homepage section{margin-bottom:0;padding-top:70px; height:auto;}
 
 :root{--button-alternate-color:#e3272d;--button-color:#e5c3d3;--font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,Ubuntu,roboto,noto,segoe ui,arial,sans-serif;--font-family-mono:Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;--font-size-small:12px;--grid-gap:30px;--home-link-color:#d4d4d4;--home-link-hover-color:var(--primary-color);--home-link-hover-color:#e3272d;--input-focus-border:#83aaac;--label-text:#777;--nav-link-hover-bg:#111;--post-link-color:#0f070b;--text-color-meta:rgba(0,0,0,.5), height:100vh;}
 
-body{font-family:var(--font-body);scroll-behavior:smooth;width:100vw}
+body{font-family:var(--font-body);scroll-behavior:smooth;width:100vw;}
 
 
 body.blogpost .backimage{z-index:-5;}
@@ -617,12 +617,12 @@ to{transform:translateX(0)}
 .actionJackson:hover{box-shadow:0 0 42px #f7f2f1;outline:1px #000}
 .button{
   // background:linear-gradient(180deg,#221a20 1%,#111 99%);
-  background:#13A9F4;
+  background:var(--theme-ui-colors-siteColor);
 border:1px solid #685766;color:#ccc;height:auto;padding:1vh 3vw}
 .txtshadow{text-shadow:2px 2px 2px #000}
 
 .button{align-items:center;align-self:center;
-  background:#13A9F4; 
+  background:var(--theme-ui-colors-siteColor); 
   border:1px solid #000;
   border-radius:6px;
   color:#fff !important;
@@ -1089,18 +1089,23 @@ ul li{display:inline-block}
   
   .hover .flexcheek:hover{ background: rgba(0,0,0,0.70) !important}
   .featurelist li:hover { background: rgba(0,0,0,0.80) !important}
-  // body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer{
-  //   height:160px !important;
-  // }
+  body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer{
+    height:80px !important;
+  }
 
   .flexcheek{width:100% !important; position:inherit; top:inherit;}
 
   body .spacer{height:135px !important;}
-  body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer, body.category .spacer, body.search .spacer{
+  body.tagpage .spacer, body.category .spacer, body.search .spacer{
     display:block;
     height:220px !important;
   }
   
+  // body.homepage .spacer{
+  //   height:220px !important;
+  // }
+
+
   .topmenu {gap:1vw ; padding:0 ;}
   .topmenu li {margin-top:2vh ;
     // background-color:rgba(0, 0, 0, 0.4);
