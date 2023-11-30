@@ -7,16 +7,11 @@
   NODE_OPTIONS = "--max_old_space_size=4096"
 
 [[headers]]
-  # Define which paths this specific [[headers]] block will cover.
   for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "/*.svg"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    X-Frame-Options = "ALLOW-FROM https://memegenes.com"
+    X-Frame-Options = "ALLOW-FROM *"
+    Content-Security-Policy = "frame-ancestors 'self' https://www.youtube.com https://youtu.be"
 
 [[edge_functions]]
   function = "hello" 
