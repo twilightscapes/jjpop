@@ -61,9 +61,9 @@ postLimit: "4"
 
 Bloopers!
 
-<a class="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/twilightscapes/memes&amp;stack=cms&amp;SITE_LOGO=https://https://memegenes.com/assets/logo.svg" rel="nofollow">
+<!-- <a class="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/twilightscapes/memes&amp;stack=cms&amp;SITE_LOGO=https://https://memegenes.com/assets/logo.svg" rel="nofollow">
 Install MemeGenes
-</a>
+</a> -->
 
 <!-- INSTALL PIRATE: &nbsp; [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piratesocial/pirate&amp;stack=cms&amp;SITE_LOGO=https://piratesocial.org/assets/logo.svg) &nbsp; (install takes about 4 minutes) -->
 
